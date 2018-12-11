@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="1dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/ic_launcher_background">
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="500dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="10dp">
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="500dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <View
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:background="@android:color/white" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A1"
+            android:layout_width="110dp"
+            android:text="A1"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A2"
+            android:text="A2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A3"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:text="A3"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A4"
+            android:text="A4"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A5"
+            android:text="A5"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A6"
+            android:text="A6"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/A7"
+            android:text="A7"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/reserve"
+            android:text="reserve"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@color/grey"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="500dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginRight="10dp">
+        <View
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:background="@android:color/white" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B1"
+            android:text="B1"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B2"
+            android:text="B2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B3"
+            android:text="B3"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B4"
+            android:text="B4"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B5"
+            android:text="B5"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B6"
+            android:text="B6"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/B7"
+            android:text="B7"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="4dp"
+            android:background="@android:color/black" />
+        <View
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/cancel"
+            android:text="cancel"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

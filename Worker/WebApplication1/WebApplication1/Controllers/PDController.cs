@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
-
+using System.Net;
+using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace WebApplication1.Controllers
 {
@@ -23,9 +25,19 @@ namespace WebApplication1.Controllers
 
         // GET: api/PD
         [HttpGet]
-        public IEnumerable<ParkDetails> GetParkDet()
+        public JObject GetParkDet()
         {
-            return _context.ParkDet;
+            /***********************************************************/
+            string URL = "https://parkingdb-a7779.firebaseio.com/Parcare1/.json";
+            var HTTPrequest = (HttpWebRequest)WebRequest.Create(URL);
+            var Response = (HttpWebResponse)HTTPrequest.GetResponse();
+            var StreamRead = new StreamReader(Response.GetResponseStream()).ReadToEnd();
+            var Data = JObject.Parse(StreamRead);
+
+            return Data;
+
+            /**********************************************************/
+            //   return _context.ParkDet;
         }
 
         // GET: api/PD/5
@@ -91,10 +103,12 @@ namespace WebApplication1.Controllers
                 return BadRequest(ModelState);
             }
 
+
             _context.ParkDet.Add(parkDetails);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetParkDetails", new { id = parkDetails.Id }, parkDetails);
+
         }
 
         // DELETE: api/PD/5

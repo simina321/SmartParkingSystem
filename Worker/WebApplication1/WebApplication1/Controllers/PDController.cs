@@ -9,6 +9,7 @@ using WebApplication1.Models;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using System.IO;
+using System.Text;
 
 namespace WebApplication1.Controllers
 {
@@ -61,37 +62,25 @@ namespace WebApplication1.Controllers
 
         // PUT: api/PD
         [HttpPut]
-        public async Task<IActionResult> PutParkDetails([FromBody] ParkDetails parkDetails)
+        public void PutParkDetails([FromBody] ParkDetails parkDetails)
         {
-            if (!ModelState.IsValid)
+       
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(new
             {
-                return BadRequest(ModelState);
-            }
+                Name = parkDetails.Id,
+                Value = parkDetails.Status,
 
-            //if (id != parkDetails.Id)
-            //{
-            //    return BadRequest();
-            //}
+            });
 
-            _context.Entry(parkDetails).State = EntityState.Modified;
+            var request = WebRequest.CreateHttp("https://parkingdb-a7779.firebaseio.com/Parcare1/.json");
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ParkDetailsExists(parkDetails.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            request.Method = "PATCH";
+            request.ContentType = "application/json";
+            var buffer = Encoding.UTF8.GetBytes(json);
+            request.ContentLength = buffer.Length;
+            request.GetRequestStream().Write(buffer, 0, buffer.Length);
+            var response = request.GetResponse();
+            json = (new StreamReader(response.GetResponseStream())).ReadToEnd();
         }
 
         // POST: api/PD

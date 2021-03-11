@@ -7,10 +7,8 @@
 #define RGB_LED_RED_PIN 5
 #define RGB_LED_GREEN_PIN 4
 #define RGB_LED_BLUE_PIN 6
-
 #define TRIGGER_PIN3 12
-#define ECHO_PIN3 11
-
+#define ECHO_PIN3 11s
 #define TRIGGER_PIN2 2
 #define ECHO_PIN2 3 
 
